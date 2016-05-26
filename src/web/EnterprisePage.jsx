@@ -9,21 +9,10 @@ import StoreProvider from 'injection/StoreProvider';
 const NodesStore = StoreProvider.getStore('Nodes');
 
 const EnterprisePage = React.createClass({
-  mixins: [Reflux.listenTo(NodesStore, '_onNodesChange', '_onNodesChange')],
-
-  getInitialState() {
-    return {
-      clusterId: undefined,
-      nodeCount: 0,
-    };
-  },
-
-  _onNodesChange() {
-    this.setState({ clusterId: NodesStore.getClusterId(), nodeCount: NodesStore.getNodeCount() });
-  },
+  mixins: [Reflux.connect(NodesStore)],
 
   _isLoading() {
-    return !this.state.clusterId;
+    return !this.state.nodes;
   },
 
   render() {

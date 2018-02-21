@@ -1,4 +1,12 @@
-# EnterpriseIntegration Plugin for Graylog
+# DEPRECATION NOTICE
+
+This project has been merged into [graylog2-server](https://github.com/Graylog2/graylog2-server), see [#10](https://github.com/Graylog2/graylog-plugin-enterprise-integration/issues/10)
+
+Please use the [issue tracker in the graylog2-server repository](https://github.com/Graylog2/graylog2-server/issues) for any feature requests or bug reports.
+
+----
+
+# Enterprise Integration Plugin for Graylog
 
 Plugin that provides basic integration with Graylog Enterprise.
 
@@ -7,7 +15,7 @@ Plugin that provides basic integration with Graylog Enterprise.
 Installation
 ------------
 
-[Download the plugin](https://github.com/https://github.com/Graylog2/graylog-plugin-enterprise-integration/releases)
+[Download the plugin](https://github.com/Graylog2/graylog-plugin-enterprise-integration/releases)
 and place the `.jar` file in your Graylog plugin directory. The plugin directory
 is the `plugins/` folder relative from your `graylog-server` directory by default
 and can be configured in your `graylog.conf` file.
